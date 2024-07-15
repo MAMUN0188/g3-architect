@@ -37,6 +37,27 @@ main{
 section{
         margin-top: 40px;
 }
+.title{
+        padding-left: 20px;
+        font-size: 3rem;
+        font-weight: 800;
+        margin-bottom: 2px;
+}
+.description{
+        font-size: 1rem;
+        font-weight: 400;
+}
+.twin{
+        max-width: 500px;
+        margin-top: 15px;
+        box-shadow: 0px 4px 30px 0px #000000;
+        padding: 30px;
+}
+.twin h4{
+        font-size: 1.2rem;
+        padding: 0;
+        margin: 0;
+}
 
 /* Navbar style  */
 .navbar{
@@ -109,8 +130,68 @@ img{
         color: #727272;
 }
 .feature-description{
-        margin:0 0 20px;
+        margin:0 0 20px;  
 }
+
+/* Love section  */
+.love{
+        justify-content: space-between;
+}
+.writing-part{
+        max-width: 400px;
+}
+.img-part{
+        height: 982px;
+        max-width: 400px;
+}
+#titlee{
+        border-left: 5px solid red;
+}
+.exp{
+        margin-left: -70px;
+        margin-top: -70px;
+}
+/* Fact section  */
+.fact-writing-part{
+        width: 700px;
+}
+.col img{
+        width: 30px;
+        height: 30px;
+        margin: 0;
+        padding: 0;
+}
+.col h4{
+        padding: 0;
+        margin: 0;
+        font-size: 2rem;
+}
+.col p{
+        padding: 0;
+        margin: 0;
+        font-size: 1.1rem;
+}
+.col{
+        text-align: center;
+        max-width: 150px;
+        height: 100px;
+        border: 1px solid tomato;
+        padding: 30px;
+}
+.box-part{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 80px;
+        gap: 30px;
+        max-width: 950px;
+        margin:0 auto;
+}
+footer{
+        text-align: center;
+        padding: 20px;
+        border: 2px solid tomato;
+}
+
 
 @media screen and (max-width:576px) {
         .navbar, .nav-links, .team{
@@ -118,5 +199,20 @@ img{
         }
         .team-image-container{
                 grid-template-columns: repeat(1, 1fr);
+        }
+        .box-part{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                max-width: 950px;
+        }
+        .col{
+                margin: 0 auto;
+        }
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+        .box-part{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                max-width: 950px;
         }
 }
