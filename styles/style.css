@@ -23,12 +23,19 @@
         margin: auto;
         /* border: 1px solid tomato; */
 }
+main{
+        max-width: 1050px;
+        margin: 0 auto;
+}
 .btn{
         background-color: #FF900E;
         color: white;
         padding: 10px 20px;
         border-radius: 10px;
         border: none;
+}
+section{
+        margin-top: 40px;
 }
 
 /* Navbar style  */
@@ -73,10 +80,43 @@
 .banner-img img{
         width: 100%;
         margin-top: 30px;
+        margin-bottom: 30px;
+}
+/* Team section  */
+.team{
+        align-items: center;
+}
+.team-image-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+}
+.team-image-container img{
+        width: 250px;
+        height: 250px;
+}
+img{
+        width: 100%;
+}
+.our-feature{
+        max-width: 500px;
+        margin-left: 20px;
+}
+.feature-title{
+        font-size: 2.54rem;
+}
+.quick{
+        color: #727272;
+}
+.feature-description{
+        margin:0 0 20px;
 }
 
 @media screen and (max-width:576px) {
-        .navbar, .nav-links{
+        .navbar, .nav-links, .team{
                 flex-direction: column;
+        }
+        .team-image-container{
+                grid-template-columns: repeat(1, 1fr);
         }
 }
